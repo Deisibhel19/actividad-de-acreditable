@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    animation-name:background;
+    -webkit-animation-duration:10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+  }
+  @keyframes background {
+    0% {background-color: #490074; }
+    35% {background-color:#070069;}
+    55% {background-color:rgba(0, 138, 202, 0.568);}
+    75% {background-color: #00996b; }
+    85% {background-color: rgb(240, 255, 105); }
+    100% {background-color:rgb(192, 18, 12)}
+}
+  .profile-container {
+    margin: 100px auto;
+    width: 70px;
+  }
+  
+  .profile-container .profile {
+  }
+  
+  .profile-container .profile img {
+    border-radius: 50%;
+    width: 70px;
+  }
+  
+  .profile-container .profile .info {
+    display: none;
+    position: absolute;
+    width: 340px;
+    min-height: 300px;
+    max-height: 346px;
+    background-color: rgb(219, 0, 219);
+    border-radius: 20px;
+    color: rgb(222, 222, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgb(50, 163, 255);
+    flex-direction: column;
+  }
+  .profile-container .profile:hover .info {
+    display: flex;
+    animation: show 0.3s ease;
+  }
+  .profile-container .profile a {
+    color: rgb(255, 189, 189);
+    text-decoration: none;
+  }
+  .profile-container .profile a:hover {
+    text-decoration: underline;
+  }
+  
+  .profile-container .profile .info .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile-container .profile .info .photo {
+  }
+  
+  .profile-container .profile .info .photo img {
+  }
+  
+  .profile-container .profile .action {
+  }
+  
+  .profile-container .profile .action a{
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+
+    background-color:#ac00fc;
+    color:white;
+    bottom:0;
+    transform:all 0.2 ease;
+    font-size:20px;{}
+    text-decoration:none;
+    box-shadow: 0px 8px #948de8, 0px 8px 20px #222222;
+    
+
+  }
+
+  .profile-container .profile .action a:active{
+    box-shadow:none;
+    top:8px;
+}
+  .profile-container .profile .action a:hover {
+    background-color: #eee;
+  }
+  
+  .profile-container .profile .user-info {
+    padding: 10px 0;
+    
+  }
+  
+  .profile-container .profile .user-info .name {
+    font-weight: bold;
+    
+  }
+  
+  .profile-container .profile .user-info .username {
+    color: rgb(255, 177, 241);
+  }
+  
+  .profile-container .profile .description {
+    padding: 10px 0 20px 0;
+    flex: 1;
+  }
+  .profile-container .profile .description a {
+    color: rgb(5, 15, 22);
+    text-decoration: none;
+  }
+  
+  .profile-container .profile .followers-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .profile-container .profile .followers-container a {
+    color: #291414;
+  }
+  
+  .profile-container .profile .followers-container .number {
+    font-weight: bold;
+    color: rgb(241, 245, 14)
+  }
+  
+  .profile-container .profile .other {
+    padding: 10px 0;
+  }
+  
+  .profile-container .profile .other a {
+    color: rgb(222, 222, 255);
+    display: flex;
+  }
+  
+  .profile-container .profile .other a .photos {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-right: 30px;
+  }
+  .profile-container .profile .other a .photos img {
+    margin-right: -20px;
+    border: solid 4px black;
+    width: 32px;
+    height: 32px;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
